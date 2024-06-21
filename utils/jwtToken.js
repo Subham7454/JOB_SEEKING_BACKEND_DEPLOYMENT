@@ -4,7 +4,7 @@ export const sendToken = (user, statusCode, res, message) => {
     expires: "1h",
     httpOnly: true, // Set httpOnly to true
     secure: true,
-    sameSite: "None",
+    sameSite:"None",
   };
   console.log(typeof process.env.JWT_EXPIRE);
 
